@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+
+  .left {
+    .level {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      &-star {
+        position: relative;
+        &-count {
+          position: absolute;
+          top: 2px;
+          left: 21px;
+          color: #fff;
+        }
+      }
+      &-xp-outside {
+        width: 100px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 3px;
+        position: relative;
+        .level-xp {
+          overflow: hidden;
+          height: 100%;
+          border-radius: 30px;
+          &-load {
+            background-color: #74bef1;
+            height: 100%;
+          }
+          &-text {
+            position: absolute;
+            top: -3px;
+            left: 10px;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        object-fit: cover;
+      }
+      &-count {
+        color: #fff;
+        background-color: #74bef1;
+        border-radius: 30px;
+        padding: 2px 8px;
+        margin-top: 8px;
+      }
+    }
+  }
+  .right {
+    .coin {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: -16px;
+      &-count {
+        color: #fff;
+        font-size: 20px;
+        min-width: 100px;
+        text-align: end;
+      }
+    }
+    .heart {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      &-count {
+        color: #fff;
+        font-size: 20px;
+        min-width: 100px;
+        text-align: end;
+      }
+    }
+  }
+
+  .active {
+    background-color: #00000082;
+    border: 1px solid #584938;
+    border-radius: 10px;
+  }
+}

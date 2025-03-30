@@ -1,0 +1,56 @@
+// @import "@/styles/main.module.scss";
+
+.info-modal {
+  width: 900px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  &-girl {
+    img {
+      object-fit: cover;
+      width: 200px;
+      height: 100%;
+    }
+  }
+  &-text {
+  z-index: 5;
+    border: 1px solid #816e58;
+    margin: 50px 0;
+    width: 100%;
+    border-radius: 20px 20px 20px 0;
+    padding: 0 20px;
+    position: relative;
+    background-color: #816e582e;
+    backdrop-filter: blur(3px);
+    &-msg{
+        color: #564738;
+        font-size: 14px;
+    }
+    &-btn {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: transparent;
+      border: none;
+      color: #6b5847;
+      font-weight: 100;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
+.info-modal-bottom {
+  position: absolute;
+
+  width: 100%;
+  bottom: 0;
+}
+
+.info-modal-top {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 20px;
+}

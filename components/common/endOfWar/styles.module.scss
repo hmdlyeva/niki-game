@@ -1,0 +1,44 @@
+.war-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  &-content {
+    padding-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../../../public/assets/common/cardbg.png");
+    background-size: cover;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    &-text {
+      color: #dedede;
+      font-size: 22px;
+    }
+    &-info {
+      &-text{
+        color: #dedede;
+      }
+      &-btn {
+        border: none;
+        border-radius: 10px;
+        background-color: #e28418;
+        color: #dedede;
+        padding: 4px 14px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

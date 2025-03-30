@@ -1,0 +1,98 @@
+.lobi {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 50vh;
+  &-content {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    
+    .hero-cards {
+      display: grid;
+      align-items: center;
+      gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      .hero-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .hero-img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .hero-weapon-img{
+            position: absolute;
+            right: -40px;
+        }
+        .hero-info {
+          margin-left: -48px;
+          margin-top: 34px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          .heart,
+          .weapon {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            //   gap: 5px;
+            font-size: 12px;
+          }
+          .heart {
+            gap: 1px;
+          }
+        }
+      }
+      .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        filter: grayscale(50%);
+        cursor: not-allowed;
+      }
+    }
+    .war-card-template{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .enemy-cards {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      .enemy-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .enemy-img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transform: scaleX(-1);
+        }
+        .enemy-weapon-img{
+            position: absolute;
+            left: -50px;
+        }
+        
+      }
+      .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        filter: grayscale(50%);
+        cursor: not-allowed;
+      }
+      .end {
+        grid-column-end: -1;
+      }
+    }
+  }
+  .war-lobi-content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

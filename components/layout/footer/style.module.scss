@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: absolute;
+  bottom: 30px;
+  width: calc(100% - 60px);
+
+  .left {
+    .war {
+      cursor: pointer;
+      img {
+        object-fit: cover;
+      }
+      &-count {
+        color: #fff;
+        background-color: #74bef1;
+        border-radius: 30px;
+        padding: 2px 8px;
+        margin-top: 8px;
+      }
+    }
+  }
+  .right {
+    position: relative;
+    .store {
+      cursor: pointer;
+      z-index: 10;
+    }
+  }
+
+  .active {
+    background-color: #00000082;
+    border: 1px solid #584938;
+    border-radius: 10px;
+  }
+}
